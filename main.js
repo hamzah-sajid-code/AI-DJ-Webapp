@@ -65,8 +65,8 @@ function gotResults(results){
     rightWristy = results[0].pose.rightWrist.y;
     leftWristx = results[0].pose.leftWrist.x;
     leftWristy = results[0].pose.leftWrist.y;
-    RightWristscore = results[0].pose.leftWrist.x;
-    leftWristscore = results[0].pose.leftWrist.y;
+    RightWristscore = results[0].pose.leftWrist.score;
+    leftWristscore = results[0].pose.leftWrist.score;
     
     
 }
