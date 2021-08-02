@@ -60,14 +60,16 @@ function modelLoaded(){
     console.log('Successfully loaded posnet');
 }
 function gotResults(results){
+    if(results.length > 0){
     console.log(results);
+
     rightWristx = results[0].pose.rightWrist.x;       
     rightWristy = results[0].pose.rightWrist.y;
     leftWristx = results[0].pose.leftWrist.x;
     leftWristy = results[0].pose.leftWrist.y;
     RightWristscore = results[0].pose.leftWrist.score;
-    leftWristscore = results[0].pose.leftWrist.score;
-    
+    leftWristscore = results[0].pose.rightWrist.score;
+    }
     
 }
 function play(){
