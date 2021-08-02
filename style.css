@@ -1,0 +1,129 @@
+body{
+    zoom:100%;
+}
+.heading{
+    font-size: 23px;
+    margin: 0px;
+}
+.heading2{
+    color: white;
+    font-size: 30px;
+}
+
+.div_speed{
+    float: left;
+
+}
+.div_speed_img{
+    width: 200px;
+    border-radius: 100px;
+}
+#speed{
+    font-size: 23px;
+    margin: 15px;
+}
+.div_volume{
+    float: right;
+
+}
+.div_volume_img{
+    width: 200px;
+    border-radius: 100px;
+}
+#volume{
+    font-size: 23px;
+    margin: 15px;
+}
+.startbutton{
+    font-size: 35px;
+    width: 25%;
+}
+.stopbutton{
+    font-size: 35px;
+    width: 25%;
+}
+.noteFont{
+    font-family: 'Roboto Mono', monospace;
+}
+
+  
+  .rainbow {
+    text-align: center;
+    font-size: 32px;
+    font-family: cursive;
+    letter-spacing: 5px;
+    animation: colorRotate 3s linear 0s infinite;
+  }
+  
+  @keyframes colorRotate {
+    from {
+      color: #6666ff;
+    }
+    10% {
+      color: #0099ff;
+    }
+    50% {
+      color: #00ff00;
+    }
+    75% {
+      color: #ff3399;
+    }
+    100% {
+      color: #6666ff;
+    }
+  }
+  .footer{
+    color: white;
+    position: fixed;
+    width: 25%;
+    bottom: 0px;
+    text-align: center;
+    padding: 5px;
+    font-family: cursive;
+    font-size: larger;
+    animation: rainbow-bg 2.5s linear;
+	animation-iteration-count: infinite;
+}
+@keyframes rainbow-bg{
+    100%,0%{
+        background-color: rgb(255,0,0);
+    }
+    8%{
+        background-color: rgb(255,127,0);
+    }
+    16%{
+        background-color: rgb(255,255,0);
+    }
+    25%{
+        background-color: rgb(127,255,0);
+    }
+    33%{
+        background-color: rgb(0,255,0);
+    }
+    41%{
+        background-color: rgb(0,255,127);
+    }
+    50%{
+        background-color: rgb(0,255,255);
+    }
+    58%{
+        background-color: rgb(0,127,255);
+    }
+    66%{
+        background-color: rgb(0,0,255);
+    }
+    75%{
+        background-color: rgb(127,0,255);
+    }
+    83%{
+        background-color: rgb(255,0,255);
+    }
+    91%{
+        background-color: rgb(255,0,127);
+    }
+}
+canvas{
+    margin-top: 120px;
+    border-radius: 20px;
+    border:10px solid white;
+}
