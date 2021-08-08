@@ -41,18 +41,18 @@ function draw(){
             document.getElementById('speedNum').innerHTML = ': 2.0x';
             music.rate(2.0)
         }
-        if(leftWristy <= 400){
+        if(leftWristy > 400 && leftWristy <= 500){
             document.getElementById('speedNum').innerHTML = ': 2.5x';
             music.rate(2.5)
         }
     }
     if(RightWristscore > 0.1){
         circle(rightWristx,rightWristy,20);
-		InNumberleftWristY = Number(rightWristy);
-		new_leftWristY = floor(InNumberleftWristY *2);
-		leftWristY_divide_1000 = new_leftWristY/1000;
-		document.getElementById("volume").innerHTML = "Volume = " + leftWristY_divide_1000;		
-		music.setVolume(leftWristY_divide_1000);	
+		InNumberrightWristY = Number(rightWristy);
+		new_rightWristY = floor(InNumberrightWristY *2);
+		rightWristY_divide_1000 = new_rightWristY/1000;
+		document.getElementById("volNum").innerHTML = "Volume = " + rightWristY_divide_1000;		
+		music.setVolume(rightWristY_divide_1000);	
 
     }
 }
