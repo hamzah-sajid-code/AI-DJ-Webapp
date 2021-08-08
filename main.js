@@ -12,6 +12,7 @@ function setup(){
     canvas =  createCanvas(600, 500);
 	canvas.center();
     video = createCapture(VIDEO);
+    video.size(600, 500)
     video.hide();
 
     console.log('ML5 Successfully Loaded: '+ml5.version);
