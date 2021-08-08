@@ -51,7 +51,7 @@ function draw(){
 		InNumberrightWristY = Number(rightWristy);
 		new_rightWristY = floor(InNumberrightWristY *2);
 		rightWristY_divide_1000 = new_rightWristY/1000;
-		document.getElementById("volNum").innerHTML = "Volume = " + rightWristY_divide_1000;		
+		document.getElementById("volNum").innerHTML = ": " + rightWristY_divide_1000;		
 		music.setVolume(rightWristY_divide_1000);	
 
     }
@@ -76,4 +76,7 @@ function play(){
     music.play();
 	music.setVolume(1);
 	music.rate(1);
+}
+function stop(){
+    music.stop();
 }
