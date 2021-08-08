@@ -47,13 +47,12 @@ function draw(){
         }
     }
     if(RightWristscore > 0.1){
-        fill('red')
-        stroke('red')
-        circle(rightWristx, rightWristy, 20);
-        rightWristy = Number(rightWristy);
-        rightWristy_new = floor(rightWristy / 500);
-        music.setVolume(rightWristy_new);
-        document.getElementById('volNum').innerHTML = ': '+rightWristy_new;
+        circle(rightWristx,rightWristy,20);
+		InNumberleftWristY = Number(rightWristy);
+		new_leftWristY = floor(InNumberleftWristY *2);
+		leftWristY_divide_1000 = new_leftWristY/1000;
+		document.getElementById("volume").innerHTML = "Volume = " + leftWristY_divide_1000;		
+		song.setVolume(leftWristY_divide_1000);	
 
     }
 }
