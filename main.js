@@ -52,7 +52,7 @@ function draw(){
 		new_leftWristY = floor(InNumberleftWristY *2);
 		leftWristY_divide_1000 = new_leftWristY/1000;
 		document.getElementById("volume").innerHTML = "Volume = " + leftWristY_divide_1000;		
-		song.setVolume(leftWristY_divide_1000);	
+		music.setVolume(leftWristY_divide_1000);	
 
     }
 }
